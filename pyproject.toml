@@ -1,0 +1,41 @@
+[build-system]
+requires = [
+    "setuptools >= 65",
+    "wheel >= 0.38",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "interview-prep"
+version = "0.1.0"
+description = "Interview Prep of Algorithms and Data Structure"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "MIT.md"}
+keywords = ["algorithms", "data", "structures"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+authors = [
+    {name = "Evgeny Roskach", email = "e.roskach@gmail.com"},
+]
+urls = {source = "http://github.com/genyrosk/engineering-interview-prep"}
+
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "ipython >= 8.11.0",
+    "black >= 23.7.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]  # list of folders that contain the packages (["."] by default)
+include = ["algorithms*", "questions*"]
+
+# [tool.setuptools]
+# packages = [
+#     "algorithms",
+#     "questions",
+# ]
