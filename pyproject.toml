@@ -8,7 +8,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "interview-prep"
 version = "0.1.0"
-description = "Interview Prep of Algorithms and Data Structure"
+description = "Interview Prep of Algorithms and Data Structures"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {file = "MIT.md"}
@@ -31,11 +31,5 @@ dev = [
 ]
 
 [tool.setuptools.packages.find]
-where = ["."]  # list of folders that contain the packages (["."] by default)
+where = ["."]
 include = ["algorithms*", "questions*"]
-
-# [tool.setuptools]
-# packages = [
-#     "algorithms",
-#     "questions",
-# ]
