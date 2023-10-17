@@ -68,6 +68,10 @@ def dijkstra(graph: Graph, source: int, target: int):
         print("unvisited_dists", unvisited_dists)
         vertex, min_dist = min_value_in_dict(unvisited_dists)
         print("min_dist", min_dist)
+
+        if min_dist == float("inf"):  # there is no path to the target
+            return distances, prev
+
         q.remove(vertex)
         print("vertex", vertex)
 
